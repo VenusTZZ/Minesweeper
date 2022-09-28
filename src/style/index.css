@@ -1,0 +1,25 @@
+#game-grid {
+  display: grid;
+  grid-template-rows: repeat(10, 2rem);
+  grid-template-columns: repeat(10, 2rem);
+}
+
+.grid-item {
+  cursor: pointer;
+  border: solid 1px #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item:not(.opened) {
+  background-color: #ddd;
+  border-top-color: #eee;
+  border-left-color: #eee;
+  border-bottom-color: #ccc;
+  border-right-color: #ccc;
+}
+.game-over{
+  pointer-events: none;
+}
+
+
